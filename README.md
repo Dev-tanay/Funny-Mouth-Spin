@@ -2,4 +2,4 @@
 
 ### Funny Mouth Spin using HTML , CSS , JS 
 
-Link -> 
+Link -> https://dev-tanay.github.io/Funny-Mouth-Spin/
