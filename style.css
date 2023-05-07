@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  height: calc(100vh - 5em);
+  padding: 2.5em;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: #CAEFD1;
+  font-family: "Monaco", monospace;
+}
+
+.content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.face {
+  display: flex;
+  align-items: center;
+  flex: 1 1 100%;
+  font-size: clamp(80px, 30vw, 200px);
+}
+
+.controls {
+  margin-top: auto;
+}
+
+#mouth {
+  transform: translatey(0.25em);
+}
+
+button {
+  font-size: 2.25em;
+  font-weight: 500;
+  padding: 0.25em 1em;
+  background-color: #000;
+  background-clip: padding-box;
+  color: #fff;
+  border-radius: 0.3em;
+  -moz-outline-radius: 0.3em;
+  
+  border: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: inherit;
+  transition: all 0.1s ease-in-out;
+}
+button span {
+  display: inline-block;
+}
+button:hover {
+  outline: 4px solid black;
+  outline-offset: 4px;
+}
+button:active {
+  outline-offset: 3px;
+  background-color: #ff3b3b;
+}
+button:hover span {
+  transform: translatey(-2px) scale(1.1);
+  transition: 0.2s ease-in;
+}
+button:active span {
+  transform: none;
+  transition: 0.1s none;
+}
+
+@keyframes spinWhee {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
